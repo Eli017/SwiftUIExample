@@ -15,6 +15,8 @@
 		4CE813BA28F8FE0D00EFAFF6 /* SwiftUIExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE813B928F8FE0D00EFAFF6 /* SwiftUIExampleUITests.swift */; };
 		4CE813BC28F8FE0D00EFAFF6 /* SwiftUIExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE813BB28F8FE0D00EFAFF6 /* SwiftUIExampleUITestsLaunchTests.swift */; };
 		4CE813CA28F902F000EFAFF6 /* FormExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE813C928F902F000EFAFF6 /* FormExample.swift */; };
+		4CE813CC28F9A97000EFAFF6 /* LoremIpsumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE813CB28F9A97000EFAFF6 /* LoremIpsumView.swift */; };
+		4CE813CE28F9AAF400EFAFF6 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE813CD28F9AAF400EFAFF6 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		4CE813B928F8FE0D00EFAFF6 /* SwiftUIExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExampleUITests.swift; sourceTree = "<group>"; };
 		4CE813BB28F8FE0D00EFAFF6 /* SwiftUIExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4CE813C928F902F000EFAFF6 /* FormExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormExample.swift; sourceTree = "<group>"; };
+		4CE813CB28F9A97000EFAFF6 /* LoremIpsumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremIpsumView.swift; sourceTree = "<group>"; };
+		4CE813CD28F9AAF400EFAFF6 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +100,11 @@
 		4CE8139D28F8FE0900EFAFF6 /* SwiftUIExample */ = {
 			isa = PBXGroup;
 			children = (
-				4CE8139E28F8FE0900EFAFF6 /* SwiftUIExampleApp.swift */,
-				4CE813A028F8FE0900EFAFF6 /* ContentView.swift */,
+				4CE813D028F9B9FA00EFAFF6 /* Screens */,
+				4CE813CF28F9B9EB00EFAFF6 /* Views */,
 				4CE813A228F8FE0C00EFAFF6 /* Assets.xcassets */,
 				4CE813A428F8FE0C00EFAFF6 /* Preview Content */,
-				4CE813C928F902F000EFAFF6 /* FormExample.swift */,
+				4CE813CD28F9AAF400EFAFF6 /* String.swift */,
 			);
 			path = SwiftUIExample;
 			sourceTree = "<group>";
@@ -128,6 +132,24 @@
 				4CE813BB28F8FE0D00EFAFF6 /* SwiftUIExampleUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIExampleUITests;
+			sourceTree = "<group>";
+		};
+		4CE813CF28F9B9EB00EFAFF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CE813CB28F9A97000EFAFF6 /* LoremIpsumView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4CE813D028F9B9FA00EFAFF6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4CE8139E28F8FE0900EFAFF6 /* SwiftUIExampleApp.swift */,
+				4CE813A028F8FE0900EFAFF6 /* ContentView.swift */,
+				4CE813C928F902F000EFAFF6 /* FormExample.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CE813CA28F902F000EFAFF6 /* FormExample.swift in Sources */,
+				4CE813CC28F9A97000EFAFF6 /* LoremIpsumView.swift in Sources */,
+				4CE813CE28F9AAF400EFAFF6 /* String.swift in Sources */,
 				4CE813A128F8FE0900EFAFF6 /* ContentView.swift in Sources */,
 				4CE8139F28F8FE0900EFAFF6 /* SwiftUIExampleApp.swift in Sources */,
 			);

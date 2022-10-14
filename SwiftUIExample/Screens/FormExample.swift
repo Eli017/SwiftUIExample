@@ -59,9 +59,10 @@ struct FormExample: View {
                         }
                     Button("Submit", action: {
                         print("Submitted!")
+                        fullName.wrappedValue = firstName + " " + lastName
                     })
                     // Here is where the value is read.
-                    .disabled(isFormValid)
+                    .disabled(!isFormValid)
                     .foregroundColor(isFormValid ? Color.blue : Color.gray)
                 }
                 .padding(.horizontal, 36.0)
@@ -75,6 +76,15 @@ struct FormExample: View {
                     )
                 Spacer()
             }
+            Spacer()
+                .frame(height: 30)
+            if let fullName {
+                Text(fullName.wrappedValue ?? "")
+                Spacer()
+                    .frame(height: 30)
+            }
+            Divider()
+            LoremIpsumView()
             Spacer()
         }
     }

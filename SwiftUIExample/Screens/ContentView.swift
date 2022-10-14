@@ -24,7 +24,7 @@ struct ContentView: View {
                 // Swift allows unwrapping of optional variables with if let statements.
                 // This allows us to write the full variable name without worrying about nill.
                 // If there was no if let, we would need to writ `fullName?` or do a ternary.
-                if let fullName {
+                if let fullName = fullName {
                     Spacer()
                         .frame(height: 20)
                     Text("Welcome: " + fullName)
@@ -34,6 +34,11 @@ struct ContentView: View {
                 NavigationLink("Enter name please") {
                     FormExample(fullName: $fullName)
                 }
+                Spacer()
+                    .frame(height: 30)
+                Divider()
+                // How to import other views, they each need unique names.
+                LoremIpsumView()
             }
             .padding()
         }
